@@ -1,0 +1,14 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="5px">
+    <tr bgcolor="#336699" style="color:#FFFFFF;">
+        <td><strong>Space</strong></td>
+        <td><strong>Society/Organization</strong></td>
+        <td><strong>Extra Space</strong></td>
+    </tr>
+{% for row in table %}
+<tr bgcolor="99BBEE">
+	{% for cell in row%}
+		<td>{{cell}}</td>
+	{% endfor %}
+</tr>
+{% endfor %}
+</table>
