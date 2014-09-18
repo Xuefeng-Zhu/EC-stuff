@@ -26,7 +26,7 @@ if __name__ == '__main__':
 			netid = cells[1].value
 			society = cells[2].value.upper()
 			if users.get(netid) and societies.get(society):
-				join.write("(%s, %s, 0)\n" %(users[netid], societies[society]))
+				join.write("(%s, %s, 0),\n" %(users[netid], societies[society]))
 			else:
 				if users.get(netid):
 					snot_found.write(society + "\n")
